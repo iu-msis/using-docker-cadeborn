@@ -1,0 +1,52 @@
+table {
+border: 20, solid, black;
+padding: 20;
+}
+
+#special_header {
+  background-color: firebrick;
+  border: 20px, solid, black;
+}
+
+.content_fixer {
+  border: 2px, solid, black;
+}
+
+.margin_fixer {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.border {
+  border: solid, navy, 5px;
+}
+
+body {
+  background-color: lightgray;
+  color: navy;
+}
+
+td {
+  color: navy;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: navy;
+}
+
+h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+header {
+  background-color: firebrick;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 20px, solid, black;
+}
