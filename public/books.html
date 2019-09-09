@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <title>Books</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<!-- I adapted a basic nav format from the bootstrap documentation, it can be found on the bootstrap website. -->
+<body>
+  <div class="container">
+    <header>
+  <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="books.html">Books</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="user_info.html">Mark's Info</a>
+  </li>
+</ul>
+<h1>Books</h1>
+</header>
+<table class="table table-striped" id="book_table">
+  <thead id="special_header"> <!-- This is a CSS id overload I designed for table headers specifically. -->
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Year Published</th>
+      <th>Publisher</th>
+      <th>Page Count</th>
+      <th>MSRP</th>
+    </tr>
+  </thead>
+  <!-- I got information about the original publisher from Wikipedia. Wasn't sure if this information required a citation, so in the name of full disclosure I have included citations to the pages below: -->
+  <!-- The Grapes of Wrath. (2019, September 2). Retrieved from https://en.wikipedia.org/wiki/The_Grapes_of_Wrath -->
+  <!-- Brave New World. (2019, August 28). Retrieved from https://en.wikipedia.org/wiki/Brave_New_World -->
+  <!-- The Sun Also Rises. (2019, August 26). Retrieved from https://en.wikipedia.org/wiki/The_Sun_Also_Rises -->
+  <!-- Animal Farm. (2019, August 27). Retrieved from https://en.wikipedia.org/wiki/Animal_Farm-->
+  <tbody>
+    <tr>
+      <td>The Sun Also Rises</td>
+      <td>Ernest Hemingway</td>
+      <td>1926</td>
+      <td>Scribner's</td>
+      <td>180</td>
+      <td>$17.00</td>
+    </tr>
+    <tr>
+      <td>Animal Farm</td>
+      <td>George Orwell</td>
+      <td>1945</td>
+      <td>Secker and Warburg</td>
+      <td>105</td>
+      <td>$8.00</td>
+    </tr>
+    <tr>
+      <td>Brave New World</td>
+      <td>Aldous Huxley</td>
+      <td>1932</td>
+      <td>Chatto & Windus</td>
+      <td>300</td>
+      <td>$15</td>
+    </tr>
+    <tr>
+      <td>The Grapes of Wrath</td>
+      <td>John Steinbeck</td>
+      <td>1939</td>
+      <td>The Viking Press</td>
+      <td>250</td>
+      <td>$5.00</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Enter a New Book Below:</h3>
+<!-- Below is a basic input form, the basic structure of which is also from the bootstrap documentation -->
+<form>
+<div class="form-group">
+  <label for="book_title">Book Title: </label>
+  <input type="text" class="form-control" id="book_title">
+</div>
+<div class="form-group">
+  <label for="author">Author: </label>
+  <input type="text" class="form-control" id="author">
+</div>
+<div class="form-group">
+  <label for="year_published">Year Published: </label>
+  <input type="date" class="form-control" id="year_published">
+</div>
+<div class="form-group">
+  <label for="publisher">Publisher: </label>
+  <input type="text" class="form-control" id="publisher">
+</div>
+<div class="form-group">
+  <label for="page_count">Page Count: </label>
+  <input type="number" class="form-control" id="page_count">
+</div>
+<div class="form-group">
+  <label for="msrp">MSRP: </label>
+  <input type="currency" class="form-control" id="msrp">
+</div>
+</form>
+<footer>
+  Cade Born Designs, 2019.
+</footer>
+<!-- Got these scripts from video-->
+<script src="js/tablesort.min.js"></script>
+<script>
+  new Tablesort(document.getElementById('book_table'));
+</script>
+</div>
+</body>
+</html>

@@ -1,10 +1,44 @@
 <!doctype html>
 <html>
 <head>
-  <title>My Page Title</title>
-  <link rel="stylesheet" href="/css/site.css">
+  <title>Home</title>
+  <!-- Below I link to Bootstrap as well as my personal stylesheet.-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/site.css">
 </head>
+<!-- I adapted a basic nav format from the bootstrap documentation, it can be found on the bootstrap website. -->
 <body>
-<p>Your content goes here.</p>
+  <div class="container">
+    <header>
+  <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="books.html">Books</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="user_info.html">Mark's Info</a>
+  </li>
+</ul>
+<h1>Home</h1>
+</header>
+<div>
+  <!-- I used classes from bootstrap including "rounded" to give my images a slightly better feel.-->
+<center><img src="img/books_on_shelf.jpg" width="200px" class="rounded margin_fixer img-thumbnail"></center><!--I developed the margin_fixer class to improve margins and used img-thumbnail from documentation-->
+</div>
+  <!-- Here I cite the image I am using. -->
+<div>
+<center><small>Citation: Gellinger, G. (2016). Book-1659717_640. photograph, Nurnburg, Germany. Retrieved from https://pixabay.com/photos/book-read-old-literature-pages-1659717/</small></center>
+</div>
+<br />
+<div class="text-center">
+<p><strong>Hello World!</strong></p>
+<p>My name is Mark, and I absolutely love to read fiction books. On the other pages, you can find some interesting information about me, and look at what I'm reading right now!</p>
+</div>
+<footer>
+  Cade Born Designs, 2019.
+</footer>
+</div>
 </body>
 </html>

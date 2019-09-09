@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Mark's Info</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<!-- I adapted a basic nav format from the bootstrap documentation, it can be found on the bootstrap website. -->
+<body>
+  <div class="container">
+    <header>
+  <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="books.html">Books</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="user_info.html">Mark's Info</a>
+  </li>
+</ul>
+<h1>Mark's Info</h1>
+</header>
+<div>
+    <!-- I used classes from bootstrap including "rounded" to give my images a slightly better feel.-->
+<center><img src="img/man_in_suit.jpg" width="200px" class="rounded margin_fixer img-thumbnail"></center> <!--I developed the margin_fixer class to improve margins and used img-thumbnail from documentation-->
+</div>
+<!-- Here I cite the image I am using. -->
+<div>
+<center><small>Citation: Adamovich, O. (2015). Stylish-916502_640. photograph, Seattle, WA. Retrieved from https://pixabay.com/photos/stylish-man-suit-male-business-916502/</small></center>
+</div>
+<br />
+<table class="table table-striped"> <!--I used a table format based of off one in the bootstrap documentation -->
+  <thead id="special_header"> <!-- This is a CSS id overload I designed for table headers specifically. -->
+    <tr>
+    <th>Name</th>
+    <th>Country of Origin</th>
+    <th>Birthdate</th>
+    <th>Age</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tr>
+    <td>Mark Stevens</td>
+    <td>United Kingdom</td>
+    <td>07/03/1995</td>
+    <td>24</td>
+    <td><a href="mailto:madeupemail@gmail.com">madeupemail@gmail.com</a></td>
+  </tr>
+</table>
+<footer>
+  Cade Born Designs, 2019.
+</footer>
+</div>
+</body>
+</html>
