@@ -24,12 +24,9 @@
 </header>
 <div>
     <!-- I used classes from bootstrap including "rounded" to give my images a slightly better feel.-->
-<center><img src="img/man_in_suit.jpg" width="200px" class="rounded margin_fixer img-thumbnail"></center> <!--I developed the margin_fixer class to improve margins and used img-thumbnail from documentation-->
+ <!--I developed the margin_fixer class to improve margins and used img-thumbnail from documentation-->
 </div>
-<!-- Here I cite the image I am using. -->
-<div>
-<center><small>Citation: Adamovich, O. (2015). Stylish-916502_640. photograph, Seattle, WA. Retrieved from https://pixabay.com/photos/stylish-man-suit-male-business-916502/</small></center>
-</div>
+
 <br />
 
 
@@ -37,6 +34,8 @@
 
       <div id="user_generator_app" class="col">
         <div class="user_app user">
+          <center><img :src="users.picture.medium"></center>
+          <center>Image taken from randomuser.me</center>
           Arrival:<br>
           <div><span>Last Name: {{ users.name.last }}</span></div>
           <div><span>First Name: {{ users.name.first }}</span></div>
