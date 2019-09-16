@@ -4,30 +4,23 @@ var user_app = new Vue({
   data: {
     users: {
 
-      "gender": "",
-
       "name": {
         "title": "",
         "first": "",
         "last": ""
       },
-      "location": {
-        "street": "",
-        "city": "",
-        "state": "",
-        "postcode": ""
-      },
+
       "email": "",
       "dob": {
         "date": "",
         "age": ""
       },
-      "phone": "",
-      "cell": "",
+
       "id": {
         "name": "",
         "value": ""
       },
+      
       "picture": {
         "large": "",
         "medium": "",
