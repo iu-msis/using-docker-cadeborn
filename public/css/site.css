@@ -207,6 +207,8 @@ th[role=columnheader]:not(.no-sort):hover:after {
 	opacity: 1;
 }
 
+// Imported Some CSS from the template files
+
 #mainContent {
   border: 1px solid red;
   background-color: rgb(255,230,230);
