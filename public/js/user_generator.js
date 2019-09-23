@@ -20,7 +20,7 @@ var user_app = new Vue({
         "name": "",
         "value": ""
       },
-      
+
       "picture": {
         "large": "",
         "medium": "",
@@ -39,6 +39,7 @@ var user_app = new Vue({
       .then(json => {user_app.users = json.results[0]});
 
     }
+    
 },
 created: function() {
   this.fetchUser();

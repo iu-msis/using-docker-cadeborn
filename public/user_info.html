@@ -44,6 +44,9 @@
           <div><span>Age: {{ users.dob.age }}</span></div>
           <div><span>Email: {{ users.email }}</span><br></div>
         </div>
+        <!-- Button taken from bootstrap documentation-->
+        <!-- Used VueJS documentation to use a v-on:click that calls the fetch function created last time-->
+        <button class="btn btn-primary" type="submit" v-on:click="fetchUser">Reload Data</button>
       </div>
     </div>
 
